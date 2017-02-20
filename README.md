@@ -1,4 +1,4 @@
-# Educational Keylogger
+# Educational Keylogger for Windows
 
 ## Before you proceed
 
@@ -25,6 +25,15 @@ On hacker's system:
 
 
 ## Setup
+
+On target system:
+
+1). Achieve administrator privileges (not covered here).  This is where the art of pentesting comes in.    
+
+2). Upload crash_backup.exe and Visuals.txt, and create a folder to house both files.  Ex: C:\Config\Visuals.txt 
+    C:\Config\crash_backup.exe. 
+
+3). 
 
 
 
