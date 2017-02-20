@@ -29,3 +29,10 @@ On hacker's system:
 
 
 ## Future Additions & Theories
+
+Most people have important URLs saved as bookmarks in their browser.  In addition to being convenient, this also protects the user from   phishing attacks that rely on the victim clicking a spoofed URL.  Bookmarks also hinder keylogging schemes by removing context from       captured usernames and passwords.  If a user searches for "facebook" then enters credentials, the log output shows this information in     sequence - if the user clicks a bookmark then enters credentials, all we have is a click event followed by credentials.
+
+Lucky for us, mouse events can also be tracked by pyHook.  The MouseEvent class has instance variable Position, which returns the screen coordinates of the event.  If we combined this data with a screenshot of the target's browser, we could determine whether the click lines up with the autentication page of an interesting site.    
+
+pyHook documentation:
+http://pyhook.sourceforge.net/doc_1.5.0/ 
