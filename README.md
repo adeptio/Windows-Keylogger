@@ -14,7 +14,7 @@ On target system:
 
 - **Visuals.txt**: Keylogger output (disguised).
 
-- **launch.bat**: Batch file used to manipuate a browser shortcut into also running our keylogger.
+- **launch.bat**: Batch file used to manipuate a browser shortcut to also run our keylogger.
 
 
 On hacker's system:
