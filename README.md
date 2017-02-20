@@ -30,6 +30,7 @@ On hacker's system:
 ## To Do
 
 - Convert crash_backup.pyw to executable file containing all necessary modules and libraries.  We do this beause the target is very      unlikely to have pyHook, etc. installed (or even Python).  
+- Exfiltration program for keylogger output.  
 
 
 ## Known Errors
