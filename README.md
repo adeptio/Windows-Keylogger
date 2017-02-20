@@ -1,4 +1,4 @@
-# keylogger
+# Educational Keylogger
 
 Before you proceed:
 
