@@ -19,7 +19,7 @@ On target system:
 
 On hacker's system:
 
-- **keylogger_format.py**: Utility program to format and analyze keylogger output.
+- **keylogger_format.py**: Utility program to format and perform rough analysis on keylogger output.
 
 - **crash_backup.pyw**: Source code for keylogger.  
 
