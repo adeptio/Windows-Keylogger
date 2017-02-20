@@ -25,7 +25,14 @@ On hacker's system:
 
 
 
+## To Do
+
+- Convert crash_backup.pyw to executable file containing all necessary modules and libraries.  We do this beause the target is very      unlikely to have pyHook, etc. installed (or even Python).  
+
+
 ## Known Errors
+
+- Changing the Target of a browser shortcut also changes the thumbnail to be that of a batch file rather than the browser thumbnail.
 
 
 ## Future Additions & Theories
