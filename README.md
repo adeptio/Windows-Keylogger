@@ -10,17 +10,18 @@ This repository is for whitehat education only.  Do not use this for malicious p
 
 On target system:
 
-- crash_backup.pyw: The keylogger itself (with name disguised).
+- **crash_backup.exe**: The keylogger executable itself (with name disguised).  The program is converted to an .exe from .py because the  .exe includes all necesary modules and libraries (pyHook, sys, pythoncom, etc.).  This is necessary because it is highly unlikely the average user has these modules installed, or even Python.  
 
-- Visuals.txt: Keylogger output (disguised).
+- **Visuals.txt**: Keylogger output (disguised).
 
-- launch.bat: Batch file used to manipuate a browser shortcut into also running our keylogger.
+- **launch.bat**: Batch file used to manipuate a browser shortcut into also running our keylogger.
 
 
 On hacker's system:
 
-- keylogger_format.py: Utility program to format and analyze keylogger output.
+- **keylogger_format.py**: Utility program to format and analyze keylogger output.
 
+- **crash_backup.pyw**: Source code for keylogger.  
 
 
 ## Setup
@@ -44,5 +45,11 @@ Most people have important URLs saved as bookmarks in their browser.  In additio
 
 Lucky for us, mouse events can also be tracked by pyHook.  The MouseEvent class has instance variable Position, which returns the screen coordinates of the event.  If we combined this data with a screenshot of the target's browser, we could determine whether the click lines up with the autentication page of an interesting site.    
 
-pyHook documentation:
+
+## Additional Info
+
+pyHook
 http://pyhook.sourceforge.net/doc_1.5.0/ 
+
+py2exe
+http://www.py2exe.org/index.cgi/FrontPage
