@@ -9,8 +9,11 @@ This set of programs assumes the malicious actor already has direct or remote ac
 On target system:
 
 crash_backup.pyw - The keylogger itself (with name disguised).
+
 Visuals.txt - Keylogger output (disguised).
+
 launch.bat - Batch file used to manipuate a browser shortcut into also running our keylogger.
+
 
 On hacker's system:
 
