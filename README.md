@@ -32,7 +32,9 @@ On target system:
 
 2). Upload crash_backup.exe, Visuals.txt, and launch.bat - create a folder to house these files.  Ex: C:\Config\Visuals.txt, C:\Config\crash_backup.exe, C:\Config\launch.bat.
 
-3). Find a desktop shortcut that seems to get a lot of use, like a browser.  Right click the shortcut, then click properties.  Change the address in the Target field to be that of launch.bat.  When this shortcut is used, it will also start our keylogger.  
+3). Find a desktop shortcut that seems to get a lot of use, like a browser.  Right click the shortcut, then click properties.  Change the address in the Target field to be that of launch.bat.  When this shortcut is used, it will also start our keylogger.
+
+Also do this for the equivalent taskbar/toolbar icon if it exists: right click the icon, then right click the application name in the jump list and click Properties.  Change the Target field in the same way as above.  
 
 4). Exfiltrate the data (coming soon).
 
@@ -40,7 +42,7 @@ On target system:
 ## To Do
 
 - Exfiltration program for keylogger output.
-- More ways to run the keylogger.  Currently it can only 'piggyback' off desktop shortcuts, but many people also use the toolbar.  
+- More ways to run the keylogger.    
 - Infiltration program for keylogger code if remote access to target system is being used.  
 
 
