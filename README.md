@@ -10,7 +10,7 @@ This repository is for whitehat education only.  Do not use this for malicious p
 
 On target system:
 
-- **crash_backup.exe**: The keylogger executable itself (with name disguised).  The program is converted to an .exe from .py because the  .exe includes all necesary modules and libraries (pyHook, sys, pythoncom, etc.).  This is necessary because it is highly unlikely the average user has these modules installed, or even Python.  
+- **crash_backup.exe**: The keylogger executable itself (with name disguised).  The program is converted to an .exe from .py because the  .exe includes all necesary modules and libraries (pyHook, sys, pythoncom, etc.).  This is necessary because it is highly unlikely the average user has these modules installed, or even Python.  Follow py2exe link below and complete tutorial for this.  
 
 - **Visuals.txt**: Keylogger output (disguised).
 
