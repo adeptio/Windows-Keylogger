@@ -41,6 +41,7 @@ Also do this for the equivalent taskbar/toolbar icon if it exists: right click t
 
 ## To Do
 
+- SQLite for log data.
 - Exfiltration program for keylogger output.
 - More ways to run the keylogger.    
 - Infiltration program for keylogger code if remote access to target system is being used.  
