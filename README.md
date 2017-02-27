@@ -23,6 +23,8 @@ On hacker's system:
 
 - **crash_backup.pyw**: Source code for keylogger.  
 
+- **auths.db**: Database fed by SQLite3.  Currently one table, 'credentials' (keyword, rough_creds).
+
 
 ## Setup
 
@@ -41,7 +43,6 @@ Also do this for the equivalent taskbar/toolbar icon if it exists: right click t
 
 ## To Do
 
-- SQLite for log data.
 - Exfiltration program for keylogger output.
 - More ways to run the keylogger.    
 - Infiltration program for keylogger code if remote access to target system is being used.  
