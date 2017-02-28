@@ -23,6 +23,8 @@ On hacker's system:
 
 - **crash_backup.pyw**: Source code for keylogger.  
 
+- **auths.db**: Database fed by SQLite3.  Currently one table, 'credentials' (keyword, rough_creds).
+
 
 ## Setup
 
@@ -41,7 +43,6 @@ Also do this for the equivalent taskbar/toolbar icon if it exists: right click t
 
 ## To Do
 
-- SQLite for log data.
 - Exfiltration program for keylogger output.
 - More ways to run the keylogger.    
 - Infiltration program for keylogger code if remote access to target system is being used.  
@@ -59,7 +60,7 @@ Most people have important URLs saved as bookmarks in their browser.  In additio
 Lucky for us, mouse events can also be tracked by pyHook.  The MouseEvent class has instance variable Position, which returns the monitor coordinates of the event.  If we combine this data with a screenshot of the target's browser, we can determine whether the click lines up with a bookmark to the autentication page of an interesting site.    
 
 
-## Additional Info
+## Resources
 
 pyHook
 http://pyhook.sourceforge.net/doc_1.5.0/ 
