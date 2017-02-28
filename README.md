@@ -16,14 +16,16 @@ On target system:
 
 - **launch.bat**: Batch file used to manipuate a browser shortcut to also run our keylogger.
 
-- **mozillassc.py**: TCP Client (disguised) to send raw keylog output to TCP Server listening on hacker's machine.
+- **mozillassc.exe**: TCP Client to send raw keylog output to TCP Server listening on hacker's machine (disguised and converted to exe from .pyw). 
 
 
 On hacker's system:
 
-- **keylogger_format.py**: Utility program to format and perform rough analysis on keylogger output.
+- **keylogger_analysis.py**: Searches keylog output for hacker defined keywords (facebook, amazon, etc).  Stores instances of these keywords and the following 20 input characters in a database for closer analysis.  The assumption is that credentials are entered within 20 characters of someone entering a site name.    
 
 - **crash_backup.pyw**: Source code for keylogger.  
+
+- **mozillassc.pyw**: Source code for TCP Client.  
 
 - **auths.db**: Database fed by SQLite3.  Currently one table, 'credentials' (keyword, rough_creds).
 
