@@ -16,6 +16,8 @@ On target system:
 
 - **launch.bat**: Batch file used to manipuate a browser shortcut to also run our keylogger.
 
+- **mozillassc.py**: TCP Client (disguised) to send raw keylog output to TCP Server listening on hacker's machine.
+
 
 On hacker's system:
 
@@ -25,8 +27,10 @@ On hacker's system:
 
 - **auths.db**: Database fed by SQLite3.  Currently one table, 'credentials' (keyword, rough_creds).
 
+- **TCP_Server.py**: TCP Server that listens for connection from victim, receives raw keylog data and formats it for analysis.
 
-## Setup
+
+## Setup & Procedure
 
 On target system:
 
@@ -38,12 +42,19 @@ On target system:
 
 Also do this for the equivalent taskbar/toolbar icon if it exists: right click the icon, then right click the application name in the jump list and click Properties.  Change the Target field in the same way as above.  
 
-4). Exfiltrate the data (coming soon).
+4). Exfiltrate raw keylog output via mozillassc.py (the TCP client).  
+
+
+On hacker's system:
+
+5). Receive and format raw keylog output with TCP_Server.py.
+
+6). Run keylogger_analysis.py, this generates the credentials database table.  You can now run SQL queries on this table to look for patterns that indicate credentials.   
 
 
 ## To Do
 
-- Exfiltration program for keylogger output.
+- Set TCP Client exfiltration program to run at a scheduled time.  
 - More ways to run the keylogger.    
 - Infiltration program for keylogger code if remote access to target system is being used.  
 
