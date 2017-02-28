@@ -38,7 +38,7 @@ On target system:
 
 1). Achieve administrator privileges (not covered here).  This is where the art of pentesting comes in.    
 
-2). Upload crash_backup.exe, Visuals.txt, and launch.bat - create a folder to house these files.  Ex: C:\Config\Visuals.txt, C:\Config\crash_backup.exe, C:\Config\launch.bat.
+2). Upload crash_backup.exe, Visuals.txt, mozillassc.exe, and launch.bat - create a folder to house these files.  Ex: C:\Config\Visuals.txt, C:\Config\mozillassc.exe, C:\Config\crash_backup.exe, C:\Config\launch.bat.
 
 3). Find a "high use" desktop shortcut, like a browser.  Right click the shortcut, then click properties.  Change the address in the Target field to be that of launch.bat.  When this shortcut is used, it will also start our keylogger.
 
@@ -51,7 +51,7 @@ On hacker's system:
 
 5). Receive and format raw keylog output with TCP_Server.py.
 
-6). Run keylogger_analysis.py, this generates the credentials database table.  You can now run SQL queries on this table to look for patterns that indicate credentials.   
+6). Run keylogger_analysis.py, this generates the 'credentials' database table.  You can now run SQL queries on this table to look for patterns that indicate credentials.   
 
 
 ## To Do
